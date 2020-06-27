@@ -37,7 +37,7 @@ class SAPAlvGrid:
         return self.grid.GetCellValue(row, column)
 
     def get_cell(self, row, column):
-        return self.__get_cell(row, column)
+        return self.__get_cell(row, self.columns[column])
 
     def __iter__(self):
         for row in range(0, self.__row_count()):
