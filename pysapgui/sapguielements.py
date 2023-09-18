@@ -267,3 +267,7 @@ class SAPGuiElements:
             for item in root_element.Children:
                 print(item.Id)
 
+    @staticmethod
+    def get_active_window(sap_session):
+        return str(sap_session.ActiveWindow.Id).split("/")[-1]
+

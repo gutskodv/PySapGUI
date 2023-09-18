@@ -1,5 +1,5 @@
-from .sapguielements import SAPGuiElements
-from .alv_grid import SAPAlvGrid
+from pysapgui.sapguielements import SAPGuiElements
+from pysapgui.alv_grid import SAPAlvGrid
 
 MENU_STATUS = ['Статус...', 'Status...']
 

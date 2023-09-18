@@ -1,4 +1,4 @@
-from .sapguielements import SAPGuiElements
+from pysapgui.sapguielements import SAPGuiElements
 
 
 class SAPAlvGrid:
