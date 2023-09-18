@@ -29,6 +29,7 @@ GUI_VKEYS = {
     "F12": 12,
     "Shift+F3": 15,
     "Shift+F4": 16,
+    "Shift+F5": 17,
     "Ctrl+F7": 31,
     "Ctrl+Shift+F9": 45
 }
@@ -258,3 +259,11 @@ class SAPGuiElements:
                 grid_id,
                 grid_element.type)
             raise TypeError(msg)
+
+    @staticmethod
+    def print_all_elements(sap_session, root_element_id):
+        root_element = SAPGuiElements.__get_element(sap_session=sap_session, element_id=root_element_id)
+        if root_element:
+            for item in root_element.Children:
+                print(item.Id)
+
